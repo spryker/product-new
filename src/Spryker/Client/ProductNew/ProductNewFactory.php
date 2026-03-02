@@ -72,17 +72,11 @@ class ProductNewFactory extends AbstractFactory
         return $this->getProvidedDependency(ProductNewDependencyProvider::NEW_PRODUCTS_RESULT_FORMATTER_PLUGINS);
     }
 
-    /**
-     * @return \Spryker\Client\ProductNew\Dependency\Client\ProductNewToStoreClientInterface
-     */
     public function getStoreClient(): ProductNewToStoreClientInterface
     {
         return $this->getProvidedDependency(ProductNewDependencyProvider::CLIENT_STORE);
     }
 
-    /**
-     * @return \Spryker\Client\ProductNew\Dependency\Client\ProductNewToLocaleClientInterface
-     */
     public function getLocaleClient(): ProductNewToLocaleClientInterface
     {
         return $this->getProvidedDependency(ProductNewDependencyProvider::CLIENT_LOCALE);

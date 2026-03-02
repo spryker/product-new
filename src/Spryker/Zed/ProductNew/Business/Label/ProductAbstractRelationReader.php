@@ -25,10 +25,6 @@ class ProductAbstractRelationReader implements ProductAbstractRelationReaderInte
      */
     protected $productNewConfig;
 
-    /**
-     * @param \Spryker\Zed\ProductNew\Persistence\ProductNewQueryContainerInterface $productNewQueryContainer
-     * @param \Spryker\Zed\ProductNew\ProductNewConfig $productNewConfig
-     */
     public function __construct(ProductNewQueryContainerInterface $productNewQueryContainer, ProductNewConfig $productNewConfig)
     {
         $this->productNewQueryContainer = $productNewQueryContainer;

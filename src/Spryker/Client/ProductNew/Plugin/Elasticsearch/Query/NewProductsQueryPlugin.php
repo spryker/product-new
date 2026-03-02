@@ -89,9 +89,6 @@ class NewProductsQueryPlugin extends AbstractPlugin implements QueryInterface, S
         $this->searchContextTransfer = $searchContextTransfer;
     }
 
-    /**
-     * @return void
-     */
     protected function setupDefaultSearchContext(): void
     {
         $searchContextTransfer = new SearchContextTransfer();
@@ -203,9 +200,6 @@ class NewProductsQueryPlugin extends AbstractPlugin implements QueryInterface, S
         return $query;
     }
 
-    /**
-     * @return bool
-     */
     protected function hasSearchContext(): bool
     {
         return (bool)$this->searchContextTransfer;

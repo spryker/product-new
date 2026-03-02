@@ -34,9 +34,6 @@ class ProductNewFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function setUp(): void
     {
         parent::setUp();
@@ -226,17 +223,11 @@ class ProductNewFacadeTest extends Unit
         $this->assertCount(0, $productLabelProductAbstractRelationTransfers, 'Result should have been matched expected number of label relation changes.');
     }
 
-    /**
-     * @return string
-     */
     protected function getLabelNewName(): string
     {
         return 'TEST_NEW_LABEL';
     }
 
-    /**
-     * @return \Spryker\Zed\ProductNew\Business\ProductNewFacadeInterface
-     */
     protected function getFacade(): ProductNewFacadeInterface
     {
         /** @var \Spryker\Zed\ProductNew\ProductNewConfig|\PHPUnit\Framework\MockObject\MockObject $configMock */
@@ -252,9 +243,6 @@ class ProductNewFacadeTest extends Unit
         return $facade;
     }
 
-    /**
-     * @return array
-     */
     public function validTimeRangeProductsToAssignDataProvider(): array
     {
         return [
@@ -273,9 +261,6 @@ class ProductNewFacadeTest extends Unit
         ];
     }
 
-    /**
-     * @return array
-     */
     public function invalidTimeRangeProductsToAssignDataProvider(): array
     {
         return [
@@ -302,9 +287,6 @@ class ProductNewFacadeTest extends Unit
         ];
     }
 
-    /**
-     * @return void
-     */
     protected function cleanProductNewDates(): void
     {
         $newFromFieldName = SpyProductAbstractTableMap::getTableMap()->getColumn(SpyProductAbstractTableMap::COL_NEW_FROM)->getPhpName();
