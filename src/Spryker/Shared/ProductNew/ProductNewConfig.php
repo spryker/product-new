@@ -10,6 +10,8 @@ namespace Spryker\Shared\ProductNew;
 interface ProductNewConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const DEFAULT_LABEL_NAME = 'NEW';
